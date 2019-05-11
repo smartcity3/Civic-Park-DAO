@@ -1,0 +1,6 @@
+Django
+djangorestframework
+mlxtend
+pandas
+request
+django-cors-headers
