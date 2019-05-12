@@ -2,5 +2,5 @@ Django
 djangorestframework
 mlxtend
 pandas
-request
+requests
 django-cors-headers

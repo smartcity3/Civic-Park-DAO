@@ -1,5 +1,6 @@
 import json
 from pathlib import Path
+import requests
 
 import pandas as pd
 from mlxtend.frequent_patterns import apriori
@@ -25,35 +26,45 @@ def get_apriori_result(response, supp):
     return cleaned_data
 
 
-def parse_json():
-    base_path = Path(__file__).parent.parent
-    with open(base_path / 'static/response_campaigns.json') as json_file:
-        parsed_json = json.load(json_file)
-    return parsed_json
+def get_json(api_endpoint):
+    r = requests.get(api_endpoint)
+    return r.json()
 
 
-def get_campaign_data_from_response():
+def post_json(body, api_endpoint):
+    r = requests.post(api_endpoint, json=body)
+    return r.json()
 
-    campaign_categories_mapping_to_json = {
-        "FAMobility": 12,
-        "FASafety": 13,
-        "SAEconomic": 14,
-        "SARoadsTrans": 15,
-        "TArtificialIntelligence": 16,
-        "TAutonomousVehicles": 17,
-        "TGeospatial": 18,
-        "TIoT": 19,
-        "TSensors": 20
-    }
+# def parse_json():
+#     base_path = Path(__file__).parent.parent
+#     print(base_path)
+#     with open(base_path / 'static/response_campaigns.json') as json_file:
+#         parsed_json = json.load(json_file)
+#     return parsed_json
 
-    response_json = parse_json()
 
-    data = []
-    for contract in response_json['contracts']:
-        row = {"Name_Of_Community": contract['contractProperties'][3]['value']}
-        for category in campaign_categories_mapping_to_json.keys():
-            row.update({category: int(contract['contractProperties']
-                                      [campaign_categories_mapping_to_json[category]]['value'])})
-        data.append(row)
-
-    return data
+# def get_campaign_data_from_response():
+#
+#     campaign_categories_mapping_to_json = {
+#         "FAMobility": 12,
+#         "FASafety": 13,
+#         "SAEconomic": 14,
+#         "SARoadsTrans": 15,
+#         "TArtificialIntelligence": 16,
+#         "TAutonomousVehicles": 17,
+#         "TGeospatial": 18,
+#         "TIoT": 19,
+#         "TSensors": 20
+#     }
+#
+#     response_json = parse_json()
+#
+#     data = []
+#     for contract in response_json['contracts']:
+#         row = {"Name_Of_Community": contract['contractProperties'][3]['value']}
+#         for category in campaign_categories_mapping_to_json.keys():
+#             row.update({category: int(contract['contractProperties']
+#                                       [campaign_categories_mapping_to_json[category]]['value'])})
+#         data.append(row)
+#
+#     return data
