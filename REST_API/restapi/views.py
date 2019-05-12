@@ -1,19 +1,24 @@
 from django.http import JsonResponse
-from django.views.decorators.csrf import ensure_csrf_cookie
 from rest_framework.decorators import api_view
+import json
 
 # Processing function import
 from .functions import processing
 
 
 @api_view(['GET'])
-@ensure_csrf_cookie
 def index(request):
     return JsonResponse({'response': 'Hello from Civic Park\'s DAO REST API'})
 
 
+@api_view(['POST'])
+def apriori(request):
+    body_dict = json.loads(request.body.decode('utf-8'))
+    support = body_dict.get('support', None)
+    return JsonResponse({'apriori': processing.new_apriori(float(support), 'http://localhost:3000/api/Campaign')})
+
+
 @api_view(['GET', 'POST'])
-@ensure_csrf_cookie
 def campaigns(request):
     if request.method == 'GET':
         campaign_id = request.get_raw_uri().split('/')[-1]
@@ -27,7 +32,6 @@ def campaigns(request):
 
 
 @api_view(['GET', 'POST'])
-@ensure_csrf_cookie
 def teams(request):
     if request.method == 'GET':
         team_id = request.get_raw_uri().split('/')[-1]

@@ -1,5 +1,3 @@
-import json
-from pathlib import Path
 import requests
 
 import pandas as pd
@@ -24,6 +22,23 @@ def get_apriori_result(response, supp):
                     for row_index in apriori_df['Support'].keys()]
 
     return cleaned_data
+
+
+def new_apriori(supp, api_endpoint):
+    array_of_campaigns = get_json(api_endpoint)
+    variables = list(array_of_campaigns[0].keys())
+    df = pd.DataFrame([[i.get(j, None) for j in variables] for i in array_of_campaigns], columns=variables)
+
+    # Drop non numeric columns
+    df_dropped = df.drop(['$class', 'owner', 'campaignId'], axis=1)
+    df_dropped.index = df_dropped['campaignName']
+    df_dropped = df_dropped.drop(['campaignName', 'Sensors'], axis=1)
+
+    df_dropped.astype(int)
+
+    apriori_df = apriori(df_dropped.T, supp, use_colnames=True)
+
+    return apriori_df.to_json(orient='columns')
 
 
 def get_json(api_endpoint):
