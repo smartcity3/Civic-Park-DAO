@@ -6,7 +6,7 @@
     app
   >
     <v-flex class="align-center">
-      <v-btn to="home" flat>
+        <v-btn to="/" flat>
         <h2 class="font-weight-light title white--text">Civic Park DAO</h2>
       </v-btn>
     </v-flex>
