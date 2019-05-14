@@ -1,5 +1,6 @@
 <template>
   <v-app id="inspire">
+    <sidebar/>
     <main-tool-bar/>
     <v-content>
       <router-view/>
@@ -8,11 +9,12 @@
 </template>
 
 <script>
-import MainToolBar from '@/components/MainToolBar.vue';
+  import MainToolBar from './components/layout/MainToolBar.vue';
+  import Sidebar from "./components/layout/Sidebar";
 
 export default {
   name: 'App',
-  components: { MainToolBar },
+  components: {Sidebar, MainToolBar},
   data() {
     return {
       //
