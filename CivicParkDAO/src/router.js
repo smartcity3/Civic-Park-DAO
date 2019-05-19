@@ -20,10 +20,10 @@ export default new Router({
       name: 'browse',
       component: Browse,
     },
-      {
-          path: '/create',
-          name: 'create',
-          component: CreateCampaign,
-      },
+    {
+      path: '/create',
+      name: 'create',
+      component: CreateCampaign,
+    },
   ],
 });
