@@ -8,6 +8,8 @@ import axios from 'axios';
 import VueAxios from 'vue-axios';
 
 Vue.use(VueAxios, axios);
+axios.defaults.xsrfHeaderName = 'X-CSRFToken';
+axios.defaults.xsrfCookieName = 'csrftoken';
 
 Vue.config.productionTip = false;
 

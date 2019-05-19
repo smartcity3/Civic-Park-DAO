@@ -3,6 +3,7 @@
     <v-layout
             text-xs-center
             wrap
+            class="py-5"
     >
       <v-flex xs12 v-for="link in links" :key="link.name">
         <v-btn color="blue" :to="link.route" round large>
@@ -30,21 +31,7 @@
           icon: 'fas fa-chart-bar', name: 'AI & Analytics',
         },
       ],
-    }),
-    methods: {
-      createCampaign: function () {
-        this.axios.post('http://localhost:8000/api/v1/Campaign', {
-          firstName: 'Fred',
-          lastName: 'Flintstone'
-        })
-                .then(function (response) {
-                  console.log(response);
-                })
-                .catch(function (error) {
-                  console.log(error);
-                });
-      },
-    }
+    })
   };
 </script>
 

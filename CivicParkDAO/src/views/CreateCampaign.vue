@@ -183,9 +183,6 @@
             reset() {
                 this.$refs.form.reset();
             },
-            resetValidation() {
-                this.$refs.form.resetValidation();
-            },
             createCampaign() {
                 let postData = {
                     "campaignId": Math.floor(Math.random() * Math.floor(100)),
@@ -201,7 +198,7 @@
                     "owner": this.owner
                 };
                 this.axios.post('http://localhost:3000/api/Campaign', postData)
-                    .then(function (response) {
+                    .then(function () {
                         alert('Campaign created!');
                     })
                     .catch(function (error) {

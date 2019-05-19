@@ -1,7 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="96885554-94df-4ce5-a8df-9954de46d7d1" name="Default Changelist" comment="" />
+    <list default="true" id="96885554-94df-4ce5-a8df-9954de46d7d1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CivicParkDAO/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../CivicParkDAO/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CivicParkDAO/src/views/Browse.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../CivicParkDAO/src/views/Browse.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CivicParkDAO/src/views/CreateCampaign.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../CivicParkDAO/src/views/CreateCampaign.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CivicParkDAO/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../CivicParkDAO/src/views/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/REST_API.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/REST_API.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.virtualenvs/bin/activate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.virtualenvs/bin/activate.csh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.virtualenvs/bin/activate.fish" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.virtualenvs/bin/django-admin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.virtualenvs/bin/django-admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.virtualenvs/bin/easy_install" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.virtualenvs/bin/easy_install-3.7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.virtualenvs/bin/f2py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.virtualenvs/bin/f2py3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.virtualenvs/bin/f2py3.7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.virtualenvs/bin/pip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.virtualenvs/bin/pip3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.virtualenvs/bin/pip3.7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.virtualenvs/bin/python" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.virtualenvs/bin/python3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.virtualenvs/bin/python3.7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.virtualenvs/bin/sqlformat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.virtualenvs/lib64" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.virtualenvs/pyvenv.cfg" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,11 +41,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/REST_API/settings.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/restapi/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="524">
-              <caret line="66" column="21" lean-forward="true" selection-start-line="63" selection-start-column="9" selection-end-line="66" selection-end-column="21" />
+            <state relative-caret-position="135">
+              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/restapi/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/restapi/functions/processing.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="129">
+              <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -31,24 +80,27 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/REST_API/urls.py" />
         <option value="$PROJECT_DIR$/restapi/static/response_campaigns.json" />
-        <option value="$PROJECT_DIR$/restapi/functions/processing.py" />
-        <option value="$PROJECT_DIR$/restapi/urls.py" />
-        <option value="$PROJECT_DIR$/restapi/views.py" />
-        <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/restapi/cors.py" />
         <option value="$PROJECT_DIR$/REST_API/settings.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/restapi/urls.py" />
+        <option value="$PROJECT_DIR$/restapi/views.py" />
+        <option value="$PROJECT_DIR$/restapi/functions/processing.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="27" />
+    <option name="y" value="-4" />
     <option name="width" value="1366" />
-    <option name="height" value="741" />
+    <option name="height" value="772" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -67,11 +119,6 @@
               <item name="REST_API" type="462c0819:PsiDirectoryNode" />
               <item name="REST_API" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="REST_API" type="b2602c69:ProjectViewProjectNode" />
-              <item name="REST_API" type="462c0819:PsiDirectoryNode" />
-              <item name="restapi" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -80,8 +127,9 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/restapi/static" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -141,22 +189,41 @@
       <updated>1557565261590</updated>
       <workItem from="1557565262860" duration="3613000" />
       <workItem from="1557573288995" duration="1652000" />
+      <workItem from="1557617043236" duration="1351000" />
+      <workItem from="1557642748800" duration="2606000" />
+      <workItem from="1557658672517" duration="404000" />
+      <workItem from="1557664936310" duration="3314000" />
+      <workItem from="1558277625589" duration="261000" />
     </task>
+    <task id="LOCAL-00001" summary="added more to the API&#10;&#10;in urls.py added the urls that the API consists of. in view.py implemented the functions needed.">
+      <created>1557645297517</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1557645297517</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fixed apririo">
+      <created>1557668209492</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1557668209492</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5265000" />
+    <option name="totallyTimeSpent" value="13201000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1366" height="741" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="24" width="1366" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49878347" visible="true" weight="0.25378788" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49878347" visible="true" weight="0.18787879" />
       <window_info id="Structure" order="1" sideWeight="0.50121653" side_tool="true" weight="0.25378788" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32843137" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924242" weight="0.2690583" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -164,8 +231,8 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32843137" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32843137" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007576" side_tool="true" weight="0.26833072" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49924242" weight="0.32735425" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -176,6 +243,12 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added more to the API&#10;&#10;in urls.py added the urls that the API consists of. in view.py implemented the functions needed." />
+    <MESSAGE value="fixed apririo" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed apririo" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/restapi/apps.py">
@@ -202,46 +275,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/restapi/urls.py">
+    <entry file="file://$PROJECT_DIR$/restapi/cors.py" />
+    <entry file="file://$PROJECT_DIR$/REST_API/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/restapi/functions/processing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/restapi/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="209">
+          <caret line="45" column="14" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+          <caret line="5" column="9" lean-forward="true" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/REST_API/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
+        <state relative-caret-position="315">
           <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
           <folding>
             <element signature="e#632#664#0" expanded="true" />
@@ -249,17 +307,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/restapi/cors.py">
+    <entry file="file://$PROJECT_DIR$/restapi/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="135">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/REST_API/settings.py">
+    <entry file="file://$PROJECT_DIR$/restapi/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="66" column="21" lean-forward="true" selection-start-line="63" selection-start-column="9" selection-end-line="66" selection-end-column="21" />
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restapi/functions/processing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
         </state>
       </provider>
     </entry>

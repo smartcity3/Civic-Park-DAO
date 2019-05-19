@@ -10,12 +10,17 @@ from .functions import processing
 def index(request):
     return JsonResponse({'response': 'Hello from Civic Park\'s DAO REST API'})
 
-
 @api_view(['POST'])
 def apriori(request):
     body_dict = json.loads(request.body.decode('utf-8'))
     support = body_dict.get('support', None)
-    return JsonResponse({'apriori': processing.new_apriori(float(support), 'http://localhost:3000/api/Campaign')})
+    return JsonResponse({'apriori': processing.get_apriori_result(float(support), 'http://localhost:3000/api/Campaign')})
+
+@api_view(['POST'])
+def association_rules(request):
+    body_dict = json.loads(request.body.decode('utf-8'))
+    support = body_dict.get('support', None)
+    return JsonResponse({'association_rules': processing.get_association_rules(float(support), 'http://localhost:3000/api/Campaign')})
 
 
 @api_view(['GET', 'POST'])
